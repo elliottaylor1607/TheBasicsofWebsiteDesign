@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Specifying the document type -->      
+<html> <!-- Start of webpage's HTML content -->
+<head> <!-- Start of webpage's heading content -->  
+<title> Assignment 3 - The Basics of Website Design - CSS </title> <!-- Title of the webpage -->     
+<link rel="stylesheet" href="index.css"> <!-- Referencing external CSS -->      
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within different web browsers -->   
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->                            
+<script> <!-- Start of JavaScript -->
+/*This function alternates between including and removing the responsive class to and from the topnav class for when the user selects the navigation icon if 
+the screen is less than 780 pixels wide when each page is minmised. */   
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";              
+	} else {             
+		x.className = "topnav";                 
+	}              
+} 
+/*Declaring a function and assigning with the value of the method document.getElementbyId demo and returning the value of demo as a date when the 
+Clock button is selected. */           
+function displayDate(){
+	 document.getElementById("demo").innerHTML = Date();   
+	}
+</script> <!-- End of JavaScript -->
+</head> <!-- End of webpage's heading content -->       
+<body> <!-- Start of webpage's body content -->                   
+	<div class="navcenter1"> <!-- Start of responsive navigation -->
+		<div class="topnav" id="myTopnav"> <!-- Start of topnav div -->        
+			<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Implementing a function which will display a navigation icon that will display the navigation links if selected when viewed on small screens with a reference to the icon. -->                               
+			<a href="index.html"> HOME</a> <!-- Referencing the hyperlink for the homepage -->               
+			<a href="HTML.html"> HTML</a> <!-- Referencing the hyperlink for the HTML page -->      
+			<a class="active" href="CSS.html"> CSS</a> <!-- Referencing the hyperlink for the CSS page and highlighting it to indicate that it's currently active --> 	   
+			<a href="JavaScript.html"> JAVASCRIPT</a> <!-- Referencing the hyperlink for the JavaScript page -->     
+			<a href="TheBoxModel.html"> THE BOX MODEL</a> <!-- Referencing the hyperlink for the Box Model page -->              
+	</div> <!-- End of topnav div -->
+<div id="dmainbody"> <!-- Start of dmainbody div -->
+    <h1>THE BASICS OF WEBSITE DESIGN <!-- Start of h1 div -->
+	</h1> <!-- End of h1 div -->                                
+</div> <!-- End of dmainbody div -->              
+		<h2> CSS: <!-- Start of h2 div -->
+		</h2> <!-- End of h2 div -->              
+			<p> CSS refers to "Cascading Style Sheet." </br> </br> <!-- Start of paragraph div and inserting two line breaks to break up text -->
+				It's a type of language within website design which allows users to personalise the content of webpages through the use of coding which describes the way in which elements such as text and images are to be displayed. </br> </br> <!-- inserting two line breaks to break up text -->
+				CSS uses lines of coding known as "selectors", these are what's used to select HTML "elements" that users wish to customise such as "classes" contained within style sheets. </br> </br> <!-- inserting two line breaks to break up text -->   
+				This language can be referenced within webpage documents in three different ways; the first of which is "Inline" within a webpage document where content is described and customised on the same lines as the "elements" which are to be customised, with the name of the "id" "attribute" of the "element" referenced within the "style" "selector." </br> </br> <!-- inserting two line breaks to break up text -->
+				The second of which is "Internally" where content is described and customised within open and closed "style" tags of webpage documents; this can only be done if the "style" tags are declared between the open and closed "body" tags of a document since this is typically where most "body" content is included on a website. </br> </br> <!-- inserting two line breaks to break up text -->
+				The third of which is "Externally" within a seperate document created within a text editor application which is referenced by its name and folder location within the webpage document; this document consists of numerous "style" "selectors" which are then referenced within the webpage documents that the style sheet is attached to.  
+			</p> <!-- End of paragraph div -->    
+			</div> <!-- End of paragraph div -->                                                                            
+		</div> <!-- End of responsive navigation -->          
+<div class="container1"> <!-- Start of container1 div -->       
+		<div class="box"> <!-- Start of box div -->       
+			<div class="left"> <!-- Start of left div -->         
+				<div class="IMG1"> <!-- Start of IMG1 div -->         
+					<img src="InlineCSSExampleIMG1GIMP.jpg" onmouseover="this.src='InlineCSSExampleIMG2GIMP.jpg'" width="510" onmouseout="this.src='InlineCSSExampleIMG1GIMP.jpg'"/> <!-- Implementing an image which changes on rollover -->
+			</div> <!-- End of left div -->  	
+				</div> <!-- End of IMG1 div -->  
+					<div class="right"> <!-- Start of right div -->             
+						<div class="IMG2"> <!-- Start of IMG2 div -->  
+							<img src="InternalCSSExampleIMG1GIMP.jpg" onmouseover="this.src='InternalCSSExampleIMG2GIMP.jpg'" width="510" onmouseout="this.src='InternalCSSExampleIMG1GIMP.jpg'"/> <!-- Implementing an image which changes on rollover -->   
+					</div> <!-- End of right div -->   
+						</div> <!-- End of IMG2 div -->          
+		</div> <!-- End of box div -->    
+<div class="container2"> <!-- Start of container2 div -->
+		<div class="TextBox1"> <!-- Start of TextBox1 div -->
+			</div> <!-- End of TextBox1 div -->   
+				<div class="TextBox2"> <!-- Start of TextBox2 div -->    
+		</div> <!-- End of TextBox2 div -->
+	   <div class=imagebox> <!-- Start of imagebox div --> 
+			<img src="ExternalCSSExampleIMG1GIMP.jpg" onmouseover="this.src='ExternalCSSExampleIMG2GIMP.jpg'" width="510" onmouseout="this.src='ExternalCSSExampleIMG1GIMP.jpg'"/> <!-- Implementing an image which changes on rollover -->  
+		</div> <!-- End of imagebox div -->
+			<p id="para1"="text-align: center;"> In the example represented above-left, "Inline" CSS coding is used on the "Heading 1" text "CosmoFarmer 2.0", where the "h1" selector is used to select the "h1" "id" "attribute" along with the HTML "style" "attribute" which is assigned the value of the font "color" red. (ROLLOVER THE IMAGE TO SEE THE CSS CODING) <!-- Start of paragraph1 div -->
+			</p> <!-- End of paragraph1 div -->       
+				<div class="TextBox2"> <!-- Start of TextBox2 div -->    
+					<p id="para1"="text-align: center;"> In the example represented above-right, "Internal" CSS coding is used in the form of a stylesheet entitled "#mytitle" which consists of a "text-align" "property" with the value being "left" and a font "color" "property" with the value being "red." (ROLLOVER THE IMAGE TO SEE THE CSS CODING) </br> </br> </br> <!-- Start of paragraph1 div and inserting three line breaks to break up text -->    
+							In the example represented bottom-centre, "External" CSS is used in the form of an "External" document, where numerous "selectors" are declared, the first of which being in the form of "h1" text which features "properties" in the form of font "color" which has been assigned the value "blue" and "font-size" which has been assigned the value of "18px", with these being represented as the text "What is CSS?", "Syntax of CSS", "CSS Comments", "How can I use CSS?" and "CSS class selector" within the HTMl webpage document. </br> </br> <!-- inserting two line breaks to break up text -->    
+							The second "selector" which is declared is in the form of "p" (paragraph) text, which features "properties" in the form of font "color" which has been assigned the value of "black" and  "font-size" which has been assigned the value of "14px", with these being represented in the form of "paragraph" text within the HTML webpage document. </br> </br> <!-- inserting two line breaks to break up text -->  
+							The third "selector" which is declared is in the form of an "id selector" entitled "#para1" which features "properties" in the form of "text-align" which has been assigned the value of "center" and font "color" which has been assigned the value of "red", with these being represented in the form of bold and enlarged "paragraph" text within the HTML webpage document. </br> </br> <!-- inserting two line breaks to break up text -->
+							The fourth "selector" which is decalred is in the form of a "class selector" entitled "center" which features "properties" in the form of "text-align" which has been assigned the value of "center" and font "color" which has been assigned the value of "green", with these being represented in the form of sub-headings entitled "CSS element selector" and "CSS id selector" within the HTML webpage document. </br> </br> <!-- inserting two line breaks to break up text -->
+							The fifth "selector" which is declared is in the form of "h2" which features "propeties" in the form of font "color" which has been assigned the value of "blue" and "font-size" which has been assigned the value of "13px", with these being represented in the form of a sub-heading entitled "CSS class selector" within the HTML webpage document. (ROLLOVER THE IMAGE TO SEE THE CSS CODING) 
+						</p> <!-- End of paragraph1 div -->       
+				</div> <!-- End of TextBox2 div -->        
+					</div> <!-- End of paragraph div -->  	
+</div> <!-- End of container2 div -->
+</div> <!-- End of container1 div -->  
+<div class=footer> <!-- Start of footer div -->           
+		<h3> Website Designer: Elliot Taylor </br> <!-- Start of h3 div and inserting a line break to break up the text -->    
+		Last Updated: 13/05/20 <!-- Continuation of h3 text -->    
+		</h3> <!-- End of h3 div -->
+		<button onclick="displayDate()" class="Clockbutton">WHAT'S THE TIME?</button> </br> <!-- Assigning the value of the function displayDate to the Clockbutton, referencing its class within external CSS and inserting a line break -->    
+		<h3 id="demo" style="text-align:right;"> Selecting the button will display the time. <!-- Displaying the propmpt for the Clockbutton as text which will be replaced by the data when the Clockbutton is selected -->          
+		</h3> <!-- End of h3 div -->     
+	</div> <!-- End of footer div -->   	
+</body> <!-- End of webpage's body content -->        
+</html> <!-- End of webpage's HTML content -->              

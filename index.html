@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- Specifying the document type -->    
+<html> <!-- Start of webpage's HTML content -->
+<head> <!-- Start of webpage's heading content -->  
+<title> Assignment 3 - The Basics of Website Design - Home </title> <!-- Title of the webpage -->      
+<link rel="stylesheet" href="index.css">  <!-- Referencing external CSS -->    
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->           
+<script> <!-- Start of JavaScript -->     
+/*This function alternates between including and removing the responsive class to and from the topnav class for when the user selects the navigation icon if 
+the screen is less than 780 pixels wide when each page is minmised. */     
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";              
+	} else {             
+		x.className = "topnav";                 
+	}              
+}    
+/*This event contains the function changeImg which when executed will cycle between three different images within five seconds or based on whether 
+the Previous and Next buttons have been selected. */ 
+window.onload=changeImg;
+
+/*Both the var vcount and var aimages variables contain default values, with var vtime containing the duration of five seconds as a value for when each image
+changes within the cycle. */ 
+var vcount = 0;
+var aimages = [];
+var vtime = 5000;   
+
+/*These image arrays contain file locations of different images which are displayed within the automatic slideshow when cycling within five seconds or based
+on whether the Previous and Next buttons have been selected. */
+aimages[0] = "HTMLimg.png";
+aimages[1] = "CSSimg.png";   
+aimages[2] = "JavaScriptimg.png";                  
+
+/*Declaring a function which will change the location of the image held within the aimage array .*/
+function changeImg(){
+	document.slide.src = aimages[vcount];
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount's value will be incremented. */
+	if(vcount < aimages.length - 1){
+	
+	vcount++;
+	}else{
+	
+	/*The value held within the variable vcount will be reset to nothing and the setTimeout function will call the function changeImg after waiting five 
+	seconds. */ 
+	vcount = 0;  
+	}
+	
+	setTimeout("changeImg()", vtime);
+}
+
+/*Declaring a function and assigning it with the value of the incremented variable vcount which will both change the location of the image and 
+allow users to view the next image within the cycle. */
+function fNext(){
+	vcount=vcount++;
+	document.slide.src = aimages[vcount];
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount's value will be incremented. */
+	if(vcount < aimages.length - 1){
+	    
+	vcount++;    
+	}else{
+	
+	/*The value held within the variable vcount will be reset to nothing. */ 
+	vcount = 0; 
+	}
+}
+
+/*Declaring a function and assigning it with the value of the incremented variable vcount which will both change the location of the image and 
+allow users to view the previous image within the cycle. */
+function fPrevious(){
+	vcount=vcount--;
+	document.slide.src = aimages[vcount];
+	if(vcount < aimages.length - 1){   
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount will be incremented. */
+	vcount++;
+	}else{
+		
+		/*If the value assigned to the variable vcount is equal to nothing the setTimeout function will call the function changeImg after waiting 
+		five seconds. */ 
+		vcount = 0;
+	}
+}
+/*Declaring a function and assigning with the value of the method document.getElementbyId demo and returning the value of demo as a date when the 
+Clock button is selected. */  
+function displayDate(){    
+	 document.getElementById("demo").innerHTML = Date();   
+	}
+</script> <!-- End of JavaScript -->   
+</head> <!-- End of webpage's heading content -->      
+<body> <!-- Start of webpage's body content -->                  
+	<div class="navcenter1"> <!-- Start of responsive navigation -->
+		<div class="topnav" id="myTopnav"> <!-- Start of topnav div -->           
+			<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Implementing a function which will 
+			display a navigation icon that will display the navigation links if selected when viewed on small screens with a reference to the icon -->  
+			<a class="active" href="index.html"> HOME</a> <!-- Referencing the hyperlink for the homepage and highlighting it to indicate that it's currently active -->            
+			<a href="HTML.html"> HTML</a> <!-- Referencing the hyperlink for the HTML page -->    
+			<a href="CSS.html"> CSS</a> <!-- Refrencing the hyperlink for the CSS page -->  
+			<a href="JavaScript.html"> JAVASCRIPT</a> <!-- Referencing the hyperlink for the JavaScript page -->
+			<a href="TheBoxModel.html"> THE BOX MODEL</a> <!-- Referencing the hyperlink for the Box Model page -->              
+		</div> <!-- End of topnav div -->  
+<div id="dmainbody"> <!-- Start of dmainbody div -->  
+	<h1>THE BASICS OF WEBSITE DESIGN <!--Start of h1 div -->
+	</h1> <!-- End of h1 div -->
+</div> <!-- End of dmainbody div -->                   
+		<h2> Introduction: <!-- Start of h2 div --> 
+		</h2> <!-- End of h2 div -->
+			<p> Welcome to the "Basics of Website Design" webpage. </br> </br> <!-- Start of paragraph div and inserting two line breaks to break up text -->
+				The purpose of this website is to provide information pertaining to fundamental concepts of client-side customisation you may be unfamiliar with. </br> </br> <!-- Inserting line breaks to break up the text -->
+				On this website you will find information explaining what HTML, CSS and JavaScript are, how they can be used to form the structure of and personalise content within websites in addition to what the Box Model represents. </br> </br> <!-- Inserting line breaks to break up the text -->     
+				Each page also features examples of how HTML, CSS and JavaScript can be applied in the form of both images and interactive features that can be used within the site.       
+			</p> <!-- End of paragraph div -->
+	</div> <!-- End of responsive navigation -->  
+			<div class=dbanner> <!-- Start of dbanner div -->  
+				<img name="slide" width="100%" height="400"/> <br> <!-- Specifying the dimensions of the images held within dbanner -->      
+				<button id="btnfPrevious" onclick="fPrevious()" a href="#" class="button"> PREVIOUS </button> <!-- Referencing the function fPrevious and assigning it's value to a button which will cycle through each image in the preceeding order -->        
+				<button id="btnfNext" onclick="fNext()" a href="#" class="button"> NEXT </button> <!-- Referencing the function fNext and assigning it's value to a button which will cycle through each image in the suceeding order -->            
+			</div> <!-- End of dbanner -->    
+<div class=footer> <!-- Start of footer div -->
+		<h3> Website Designer: Elliot Taylor </br> <!-- Start of h3 div and inserting a line break to break up the text -->   
+		Last Updated: 13/05/20  <!-- Continuation of h3 text -->    
+		</h3> <!-- End of h3 div -->
+		<button onclick="displayDate()" class="Clockbutton">WHAT'S THE TIME?</button> </br> <!-- Assigning the value of the function displayDate to the Clockbutton, referencing its class within external CSS and inserting a line break -->           
+		<h3 id="demo" style="text-align:right;"> Selecting the button will display the time. </h3> <!-- Displaying the propmpt for the Clockbutton as text which will be replaced by the data when the Clockbutton is selected -->    
+		</div> <!-- End of h3 div -->   	    
+	</div> <!-- End of footer div -->
+</body> <!-- End of webpage's body content -->             
+</html> <!-- End of webpage's HTML content -->                

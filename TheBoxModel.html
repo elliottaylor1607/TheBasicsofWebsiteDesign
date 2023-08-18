@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Specifying the document type -->     
+<html> <!-- Start of webpage's HTML content -->
+<head> <!-- Start of webpage's heading content -->        
+<title> Assignment 3 - The Basics of Website Design - The Box Model </title>  <!-- Title of the webpage -->         
+<link rel="stylesheet" href="index.css"> <!-- Referencing external CSS -->        
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->  
+<script> <!-- Start of JavaScript -->
+/*This function alternates between including and removing the responsive class to and from the topnav class for when the user selects the navigation icon if 
+the screen is less than 780 pixels wide when each page is minmised. */
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";              
+	} else {             
+		x.className = "topnav";                 
+	}              
+}  
+/*Declaring a function and assigning with the value of the method document.getElementbyId demo and returning the value of demo as a date when the 
+Clock button is selected. */             
+function displayDate(){   
+	 document.getElementById("demo").innerHTML = Date();
+	}  
+</script> <!-- End of JavaScript -->
+</head> <!-- End of webpage's heading content -->       
+<body> <!-- Start of webpage's body content -->                                     
+	<div class="navcenter1"> <!-- Start of responsive navigation -->
+		<div class="topnav" id="myTopnav"> <!-- Start of topnav div -->        
+			<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Implementing a function which will display a navigation icon that will display the navigation links if selected when viewed on small screens with a reference to the icon -->                 
+			<a href="index.html"> HOME</a> <!-- Referencing the hyperlink for the homepage -->      
+			<a href="HTML.html"> HTML</a> <!-- Referencing the hyperlink for the HTML page -->    
+			<a href="CSS.html"> CSS</a> <!-- Referencing the hyperlink for the CSS page -->  
+			<a href="JavaScript.html"> JAVASCRIPT</a> <!-- Referencing the hyperlink for the JavaScript page -->       
+			<a class="active" href="TheBoxModel.html"> THE BOX MODEL</a> <!-- Referencing the hyperlink for the Box Model page and highlighting it to indicate that it's currently active -->                     
+		</div> <!-- End of topnav div -->
+<div id="dmainbody"> <!-- Start of dmainbody div -->
+    <h1>THE BASICS OF WEBSITE DESIGN <!-- Start of h1 div -->
+	</h1> <!-- End of h1 div -->                             
+</div> <!-- End of dmainbody div -->                 
+		<h2> The Box Model: <!-- Start of h2 div --> 
+		</h2> <!-- End of h2 div -->                    
+			<p> The Box Model is referred to as the method in which HTML "elements" are composited together within web browsers to form website structures, with style "properties" typically being used which are referenced within CSS coding to personalise the content. </br> </br> <!-- Start of paragraph div and inserting two line breaks to break up text -->
+				The first "property" that forms the outer layer of the Box Model are "margins", these refer to the spaces which surround the "padding" and main "content" that contain HTML "elements" such as text and images, with there being four different "properties" which allow users to specify "content" held within this layer of the Box Model, these being: </br> </br> <!-- inserting two line breaks to break up text -->
+				Margin-top - this specifies the top margin of an "element." </br> </br> <!-- inserting two line breaks to break up text -->
+				Margin-bottom - this specifies the bottom margin of an "element." </br> </br> <!-- inserting two line breaks to break up text --> 
+				Margin-left - this specifies the left margin of an "element." </br> </br> <!-- inserting two line breaks to break up text -->
+				Margin-right - this specifies the right margin of an "element." </br> </br> </br> <!-- inserting three line breaks to break up text -->
+				The second property that forms part of the outer layer which surrounds all the content held within the Box Model are "borders", these refer to the way in which the "padding" and main "content" are surrounded, with there being four different "properties" which allow users to specify "content" held within this layer of the Box Model, these being: </br> </br> <!-- inserting two line breaks to break up text -->    
+				Border-top - this specifies whether the "border" which surrounds the "padding" and "content" should have a border-top or not. </br> </br> <!-- inserting two line breaks to break up text -->  
+				Border-bottom - this specifies whether the "border" which surrounds the "padding" and "content" should have a border-bottom or not. </br> </br> <!-- inserting two line breaks to break up text -->
+				Border-left - this specifies whether the "border" which surrounds the "padding" and "content" should have a border-left or not. </br> </br> <!-- inserting two line breaks to break up text --> 
+				Border-right - this specifies whether the "border" which surrounds the "padding" and "content" should have a border-right or not. </br> </br> </br> <!-- inserting three line breaks to break up text -->
+				The third property that forms part of the inner layer which surrounds all the content held within the Box Model is "padding", this refers to the space between each "element" held within the main "content" of the webpage, with there being four different "properties" which allow users to specify "content" held within this layer of the Box Model, these being: </br> </br> <!-- inserting two line breaks to break up text --> 
+				Padding-top - this specifies the space surrounding the top of an "element." </br> </br> <!-- inserting two line breaks to break up text -->
+				Padding-bottom - this specifies the space surrounding the bottom of an "element." </br> </br> <!-- inserting two line breaks to break up text -->
+				Padding-left - this specifies the space surrounding the left side of an "element." </br> </br> <!-- inserting two line breaks to break up text -->
+				Padding-right - this specifies the space surrounding the right side of an "element." </br> </br> </br> <!-- inserting three line breaks to break up text -->
+				The fourth "property" that forms the inner layer of the Box Model is the "content", this refers to "elements" such as text and images which are surrounded by "margins", "borders" and "padding" and form the main information held within the webpage, with there being twelve different "properties" which allow users to specify "content" held within this layer of the Box Model, these being: </br> </br> <!-- inserting two line breaks to break up text -->
+				Normal - this specifies the "content" as being set to a "default" value, if the "content" is stated as such, it'll hold a value of "none" meaning nothing. </br> </br> <!-- inserting two line breaks to break up text --> 
+				None - this specifies the "content" as being set to nothing. </br> </br> <!-- inserting two line breaks to break up text -->
+				Counter - this speficies the value of the "content" as being a counter if the user has specified any JavScript coding they wish to be used as "content", with examples being "functions" and "variables." </br> </br> <!-- inserting two line breaks to break up text -->
+				Attr(attribute) - this specifies the "content" as a "selector's" "attribute." </br> </br> <!-- inserting two line breaks to break up text --> 
+				String - this specifies the "content" as text determined by the user. </br> </br> <!-- inserting two line breaks to break up text -->
+				Open-quote - this specifies the "content" as text within an open quotation mark. </br> </br> <!-- inserting two line breaks to break up text -->
+				Close-quote - this specifies the "content" as text within an closed quotation mark. </br> </br> <!-- inserting two line breaks to break up text -->
+				No-open-quote - this removes any open quotation mark if specified from "content." </br> </br> <!-- inserting two line breaks to break up text -->
+				No-close-quote - this removes any close quotation mark if specified from "content." </br> </br> <!-- inserting two line breaks to break up text -->    
+				URL - this specifies the "content" as a type of media, examples of these being images, audio recordings and videos. </br> </br> <!-- inserting two line breaks to break up text -->
+				Initial - this restores the "content" property to its "normal" value. </br> </br> <!-- inserting two line breaks to break up text -->
+				Inherit - this sets the "content" "property" to inherit from a "parent" "content" "property." </br> </br> </br> <!-- inserting three line breaks to break up text --> 
+				Other "properties" which can be used to customise "content" within the Box Model include the "width" and "height" properties which can be used to specify the dimensions within the "content" inside the "margins", "borders" and "padding" of elements, with there being five different "properties" which allow users to specify dimensions, these being: </br> </br> <!-- inserting two line breaks to break up text -->
+				Auto - this allows the web browser the webpage is being viewed within to automatically calculate the width and the height. </br> </br> <!-- inserting two line breaks to break up text -->
+				Length - this allows users to sepecify the dimensions for "width and "height" using different measurements, these include "pixels/px" and "cm." </br> </br> <!-- inserting two line breaks to break up text -->
+				% - this allows users to specify the "width" and "height" "properties" of something based on the percentage of space in which they wish for it to take. </br> </br> <!-- inserting two line breaks to break up text -->
+				Initial - this restores the "width" and "height" "properties" of something to its "normal" value. </br> </br> <!-- inserting two line breaks to break up text -->  
+				Inherit - this sets the "width" and "height" "properties" of something to be inherited from a "parent" "div's" "content" "property."  
+			</p> <!-- End of paragraph div -->                                                                         
+	</div> <!-- End of responsive navigation -->  
+<div class=dbanner> <!-- Start of dbanner div -->          
+		<img src="boxmodel.png" width="100%"> <!-- Specifying the file location of the image to be held within the dbanner div and its width -->    
+		</div> <!-- End of dbanner -->    
+<div class=footer> <!-- Start of footer div -->
+		<h3> Website Designer: Elliot Taylor </br> <!-- Start of h3 div and inserting a line break to break up the text -->   
+		Last Updated: 13/05/20 </h3> <!-- Continuation of h3 text -->        
+		<button onclick="displayDate()" class="Clockbutton">WHAT'S THE TIME?</button> </br> <!-- Assigning the value of the function displayDate to the Clockbutton, referencing its class within external CSS and inserting a line break -->            
+		<h3 id="demo" style="text-align:right;"> Selecting the button will display the time. <!-- Displaying the propmpt for the Clockbutton as text which will be replaced by the data when the Clockbutton is selected -->  
+		</h3> <!-- End of h3 div -->       	    
+	</div> <!-- End of footer div -->
+</body> <!-- End of webpage's body content -->     
+</html> <!-- End of webpage's HTML content -->               

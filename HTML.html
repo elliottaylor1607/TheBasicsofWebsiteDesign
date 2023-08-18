@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Specifying the document type -->        
+<html> <!-- Start of webpage's HTML content -->
+<head> <!-- Start of webpage's heading content -->  
+<title> Assignment 3 - The Basics of Website Design - HTML </title> <!-- Title of the webpage -->         
+<link rel="stylesheet" href="index.css"> <!-- Referencing external CSS -->          
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->                            
+<script> <!-- Start of JavaScript -->
+/*This function alternates between including and removing the responsive class to and from the topnav class for when the user selects the navigation icon if 
+the screen is less than 780 pixels wide when each page is minmised. */   
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";              
+	} else {              
+		x.className = "topnav";                    
+	}                
+}
+/*Declaring a function and assigning with the value of the method document.getElementbyId demo and returning the value of demo as a date when the 
+Clock button is selected. */         
+function displayDate(){
+	 document.getElementById("demo").innerHTML = Date();
+	}
+</script> <!-- End of JavaScript -->
+</head> <!-- End of webpage's heading content -->        
+<body> <!-- Start of webpage's body content -->                       
+	<div class="navcenter1"> <!-- Start of responsive navigation -->
+		<div class="topnav" id="myTopnav"> <!-- Start of topnav div -->         
+			<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Implementing a function which will display a navigation icon that will display the navigation links if selected when viewed on small screens with a reference to the icon -->                 
+			<a href="index.html"> HOME</a> <!-- Refrencing the hyperlink for the homepage -->          
+			<a class="active" href="HTML.html"> HTML</a> <!-- Referencing the hyperlink for the HTML page and highlighting it to indicate that it's currently active -->       
+			<a href="CSS.html"> CSS</a> <!-- Refrencing the hyperlink for the CSS page -->       
+			<a href="JavaScript.html"> JAVASCRIPT</a> <!-- Referencing the hyperlink for the JavaScript page -->    
+			<a href="TheBoxModel.html"> THE BOX MODEL</a> <!-- Referencing the hyperlink for the Box Model page -->               
+		</div> <!-- End of topnav div -->
+<div id="dmainbody"> <!-- Start of dmainbody div -->
+    <h1>THE BASICS OF WEBSITE DESIGN <!-- Start of h1 div -->
+	</h1> <!-- End of h1 div --> 
+</div> <!-- End of dmainbody div -->      	
+		<h2> HTML: <!-- Start of h2 div -->
+		</h2> <!-- End of h2 div -->
+			<p> HTML refers to "HyperText Transfer Protocol." </br> </br>  <!-- Start of paragraph div and inserting two line breaks to break up text -->  
+				It is one of the most universally renowned languages available which can be used to create documents in the form of webpages for interaction within web browsers such as "Google Chrome", "Mozilla Firefox", "Internet Explorer", "Opera" and "Safari." </br> </br> <!-- Inserting line breaks to break up the text -->
+				Documents of this nature can be created within text editors within which users create their websites by inputting lines of coding between open and closed tags; open tags are referred to as "start" tags where the name of the "element" is entered, whereas closed tags are referred to as "end" tags which are where the content ends; these tags are represented as <>. </br> </br> <!-- Inserting line breaks to break up the text -->
+				Before this can be achieved, documents created within text editors need to feature the text "!DOCTYPE html" within tags to specify the document type in addition to an open "html" tag and an open "head" tag, once these have been included users can begin to input HTML coding. </br> </br> <!-- Inserting line breaks to break up the text --> 
+				Within "elements", users can control how content is displayed and customised by specifying "attributes" such as "font-color" and "font-size" for text in addition to "width" and "height" attributes for images and "divs." </br> </br> <!-- Inserting line breaks to break up the text --> 
+				HTML coding is one of the most important features of a website since this language is what is implemented within a website's design to form the basic structure which the site will be built around and where the content will be held within, without this it wouldn't be as effective. 
+			</p> <!-- End of paragraph div -->                                                                          
+	</div> <!-- End of responsive navigation -->                   
+<div class="container1"> <!-- Start of container1 div -->    
+		<div class="box"> <!-- Start of box div -->                       
+			<div class="left"> <!-- Start of left div -->    
+				<div class="IMG1"> <!-- Start of IMG1 div -->     
+					<img src="HTMLexampleIMGGIMP.jpg" onmouseover="this.src='HTMLexampleIMG2GIMP.jpg'" width="510" onmouseout="this.src='HTMLexampleIMGGIMP.jpg'"/> <!-- Implementing an image which changes on rollover -->         
+			</div> <!-- End of left div --> 
+			</div>  <!-- End of IMG1 div -->  
+						<div class="right">             
+							<div class="IMG2">
+								<img src="HTMLexampleIMG3GIMP.jpg" onmouseover="this.src='HTMLexampleIMG4GIMP.jpg'" width="510" onmouseout="this.src='HTMLexampleIMG3GIMP.jpg'"/> <!-- Implementing an image which changes on rollover -->  
+						</div> <!-- End of right div -->
+							</div> <!-- End of IMG2 div -->             
+		</div> <!-- End of box div -->
+<div class="container2"> <!-- Start of container2 div --> 
+	<div class="TextBox1"> <!-- Start of TextBox1 div -->  
+		<p id="para1"> In the example represented above-left, six types of "headings" are used to illustrate the way in which text can be represented in different sizes in the form of the text "My Very First Webpage". </br> <!-- Start of paragraph1 text and inserting a line break to break up paragraph1 text -->  
+						These are represented within tags where the "Heading" type would be specified, with "font colors" being specified in seperate tags before providing the text  
+						that is to be customised. <br> <!-- Inserting a line break to break up paragraph1 text -->      
+						"Headings" tags can be specified anywhere within a website, so long as they're between the open and closed HTML tags. (ROLLOVER THE IMAGE TO SEE THE HTML CODING) </p> <!-- End of paragraph1 div -->   
+	</div> <!-- End of TextBox1 div --> 
+	<div class="TextBox2">   
+		<p id="para1"> In the example represented above-right, a title is displayed on a webpage using the "title" text format between open and closed "head" tags in the form of the text "A Bear Story" in addition to text displayed using the "paragraph" text format between open and closed "body" tags within the document to illustrate a short story. </br> <!-- Start of paragraph1 text and inserting a line break to break up paragraph1 text -->  
+						The "title" text is represented within "title" tags which display the content held within the tags in the form of a "title" in a similar way to any text held as content within "headings" tags, with the difference being that this tag sets any text at a default size whereas with "headings" tags users can choose from up to six different sizes. </br> <!-- Inserting a line break to break up paragraph1 text -->  
+						The "paragraph" text is represented within "paragrah" tags which display the content held within the tags in the form of a "paragraph", the noticeable difference between this and the "title" tag is that the text is noticeably smaller to represent the size in which text would typically be represented as paragraphs. (ROLLOVER THE IMAGE TO SEE THE HTML CODING) <!-- Implementing an image which changes on rollover -->   
+		</p> <!-- End of paragraph1 text -->  
+	</div> <!-- End of TextBox2 div -->       
+</div> <!-- End of container2 div -->  
+</div> <!-- End of container1 div -->  	
+<div class=footer> <!-- Start of footer div -->        
+		<h3> Website Designer: Elliot Taylor </br> <!-- Start of h3 div and inserting a line break to break up the text -->     
+		Last Updated: 13/05/20 <!-- Continuation of h3 text -->            
+		</h3> <!-- End of h3 div -->
+		<button onclick="displayDate()" class="Clockbutton">WHAT'S THE TIME?</button> </br> <!-- Assigning the value of the function displayDate to the Clockbutton, referencing its class within external CSS and inserting a line break -->            
+		<h3 id="demo" style="text-align:right;"> Selecting the button will display the time. <!-- Displaying the propmpt for the Clockbutton as text which will be replaced by the data when the Clockbutton is selected -->          
+		</h3> <!-- End of h3 div -->
+	</div> <!-- End of footer div -->        
+</body> <!-- End of webpage's body content -->        
+</html> <!-- End of webpage's HTML content -->               

@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Specifying the document type -->       
+<html> <!-- Start of webpage's HTML content -->
+<head> <!-- Start of webpage's heading content -->     
+<title> Assignment 3 - The Basics of Website Design - JavaScript </title> <!-- Title of the webpage -->       
+<link rel="stylesheet" href="index.css"> <!-- Referencing external CSS -->            
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within different web browsers -->     
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->                                
+<script> <!-- Start of JavaScript -->
+/*This function alternates between including and removing the responsive class to and from the topnav class for when the user selects the navigation icon if 
+the screen is less than 780 pixels wide when each page is minmised. */
+function myFunction() {    
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";              
+	} else {              
+		x.className = "topnav";                    
+	}            
+}       
+/*Declaring a function and assigning with the value of the method document.getElementbyId demo and returning the value of demo as a date when the 
+Clock button is selected. */             
+function displayDate(){
+	 document.getElementById("demo").innerHTML = Date();
+	}           
+/*Declaring a function and assigning it with the values of declared variables to enable users to input different types of data. */	
+function validateForm() {
+	var vname = document.forms["myForm"]["fname"].value;
+	var vsurname = document.forms["myForm"]["fsurname"].value;
+	var vdob = document.forms["myForm"]["fdob"].value;
+	var vage = document.forms["myForm"]["fage"].value;
+	var vgender = document.forms["myForm"]["fgender"].value;
+	var vemail = document.forms["myForm"]["femail"].value;
+	
+	/*If the Name field is left empty an alert box will be displayed indicating that the field is empty. */
+	if (vname == "") {
+		alert("Name must be filled out");   
+		return false;    
+	}             
+	/*If the Surname field is left empty an alert box will be displayed indicating that the field is empty. */
+	if (vsurname == "") {   
+		alert("Surname must be filled out");
+		return false;
+	}		
+	
+/* Using the document.getElementById method to store the values held within each variable as "paragraph1" text within the "dreseults" "div." */
+document.getElementById("p1").innerHTML = "<p1> Thank you </p1> Your name is " +vname+" "+vsurname+" you are a "+ vgender + " Your age is "+vage+ " and your Date of Birth is "+vdob+"<br>"+ "Your email is "+vemail+ "<br>";       
+}       
+</script> <!-- End of JavaScript -->
+</head> <!-- End of webpage's heading content -->           
+<body> <!-- Start of webpage's body content -->                  
+	<div class="navcenter1"> <!-- Start of responsive navigation -->
+		<div class="topnav" id="myTopnav"> <!-- Start of topnav div -->            
+			<a href="javascript:void(0);" style="font-size:24px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Implementing a function which will display a navigation icon that will display the navigation links if selected when viewed on small screens with a reference to the icon -->   
+			<a href="index.html"> HOME</a> <!-- Referencing the hyperlink for the homepage -->                   
+			<a href="HTML.html"> HTML</a> <!-- Referencing the hyperlink for the HTML page -->     
+			<a href="CSS.html"> CSS</a> <!-- Refrencing the hyperlink for the CSS page -->  
+			<a class="active" href="JavaScript.html"> JAVASCRIPT</a> <!-- Referencing the hyperlink for the CSS page and highlighting it to indicate that it's currently active -->
+			<a href="TheBoxModel.html"> THE BOX MODEL</a> <!-- Referencing the hyperlink for the Box Model page -->               
+	</div> <!-- End of topnav div -->   
+<div id="dmainbody"> <!-- Start of dmainbody div -->
+    <h1>THE BASICS OF WEBSITE DESIGN <!-- Start of h1 div -->
+	</h1> <!-- End of h1 div -->                              
+</div> <!-- End of dmainbody div -->	
+		<h2> JavaScript: <!-- Start of h2 div --> 
+		</h2> <!-- End of h2 div -->                  
+			<p> JavaScript is referred to as a scripting language which is used to provide interactive functionality within websites. </br> </br> <!-- Start of paragraph div and inserting two line breaks to break up text -->
+				Interactive features implemented using this language take the form of client-side scripts which are executed on the user's end within their web browsers, with examples of these features being buttons which can perform different functions such as displaying the date and time as text, conducting mathematical calculations and validating information within validation forms; these are declared within open and closed "script" tags within HTML webpage documents. </br> </br> <!-- inserting two line breaks to break up text -->
+				Like most languages, JavaScript allows users to implement both pre-defined and user-defined "functions" to fulfill a specific purpose in regards to interractive features in addition to "variables" which can be used to store data, "if" statements where users specify conditions within which they wish specific tasks to be carried out, "loops" which can be used to ensure that a specific action is carried out repeatedly within specified parameters in addition to a multitude of others. </br> </br> <!-- inserting two line breaks to break up text -->     
+				Due to the ways in which users can interact with features, JavaScript is also referred to as an "object-oriented" language since "functions" behave the same way as they do within other programming languages and the principal is mostly the same. </br> </br> </br> <!-- inserting three line breaks to break up text -->
+				Provided below is an example of a Javascript" feature represented as a validation form which uses a function entitled "myFunction" that will allow users to interract with different fields of information, with these being represented within Javascript coding as six "variables" entitled as "vname", "vsurname", "vdob", "vage", "vgender" and "vemail." </br> </br> <!-- inserting two line breaks to break up text -->
+				These variables each contain the object "document.forms", with the name of the form "myform" and the "functions" "fname", "fsurname", "fdob", "femail", "fmale", "ffemale" and "fother" held as values within the "variables." </br> </br> <!-- inserting two line breaks to break up text -->
+				"Fname", "fsurname", "fage" and "femail" are represented within the form as textbox input types, with "fdob" being represented as a "date" input type within the form as a "calendar" and "fmale", "ffemale" and "fother" being represented as "radio" button input types within the form and the "submit" button being represented as a button input type within the form. </br> </br> <!-- inserting two line breaks to break up text --> 
+				These are implemented in the aforementioned input types through being referenced as HTML "input", "id" and "name" HTML "attributes" within the "paragraph" tags in which each field name is specified as "paragraph" text. </br> </br> <!-- inserting two line breaks to break up text --> 
+				"If" statements are then implemented for both "vname" and "vsurname", with the conditions of each being that if the values of both "vname" and "vsurname" are left empty within the textboxes when "myfunction" is called upon selecting the "submit" button,  two alert messages will be displayed in each instance stating that a "Name must be filled out" and that a "Surname must be filled out." </br> </br> <!-- inserting two line breaks to break up text --> 
+				When users have provided information within most of the fields and selected the "submit" button, the results will be concatenated and displayed as "paragraph" text by using the "document.getElementById" "method" to reference the names of the "variables" associated with each field of information; this text will be displayed within a "div" entitled "dresults" between the end of the form and the webpage's footer. </br> </br> <!-- inserting two line breaks to break up text -->
+				The "dresults" "div" will present informaton stating your full name, gender, age, date of birth and email address.    
+			</p> <!-- End of paragraph div -->                                                                                
+	</div> <!-- End of responsive navigation -->         
+		<form name="myForm" action="javascript:void(0);" onsubmit="return validateForm()" method="post"> <!-- Implementing a form called my form and assigning the function validateForm to the onsubmit event -->        
+			<p> Name: <input type="text" id="fname" name="fname"> Surname: <input type="text" id="fsurname" name="fsurname"> <!-- Assigning the fields to accept values consisting of the text data type -->  
+			<p> Date Of Birth: <input type="date" id="fdob" name="fdob"> <!-- Assigning the field to accept values consisting of the date data type -->   
+			<p> Age: <input type="number" id="fage" name="fage" min="1" max="100"> <!-- Assigning the field to accept values consisting of the number data type -->     
+			<p> Email: <input type="email" id="femail" name="femail"> <!-- Assigning the field to accept values consisting of the email data type -->    
+			<p>Gender: </br> Male: <input type="radio" id="fmale" name="fgender" value="Male"> Female: <input type="radio" id="ffemale" name="fgender" value="Female"> Other: <input type="radio" id="fOther" name="fgender" value="Other"> <!-- Assigning the fields to accept radio button inputs --> 
+			<p> Submit Details: <input type="submit" class="bsubmit" value="Submit"> <!--Assigning the button with the submit data type allowing users to select the button -->  
+		</form> <!-- End of form -->
+			<div id="dresults"> <!-- Start of divresults which will display the results of form validation as paragraph1 text -->  
+				<p id="p1"> <!-- Start of p1 div -->   
+				</p> <!-- End of p1 div -->         
+<div class=footer> <!-- Start of footer div --> 
+		<h3> Website Designer: Elliot Taylor </br> <!-- Start of h3 div and inserting a line break to break up the text -->           
+		Last Updated: 13/05/20 <!-- Continuation of h3 text -->      
+		</h3> <!-- End of h3 div -->       
+		<button onclick="displayDate()" class="Clockbutton">WHAT'S THE TIME?</button> </br> <!-- Assigning the value of the function displayDate to the Clockbutton, referencing its class within external CSS and inserting a line break -->        
+		<h3 id="demo" style="text-align:right;"> Selecting the button will display the time. <!-- Displaying the propmpt for the Clockbutton as text which will be replaced by the data when the Clockbutton is selected -->     
+		</h3> <!-- End of h3 div -->   	
+  	</div> <!-- End of footer div -->
+</body> <!-- End of webpage's body content -->       
+</html> <!-- End of webpage's HTML content -->                
