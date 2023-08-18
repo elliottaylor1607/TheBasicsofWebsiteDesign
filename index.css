@@ -1,0 +1,407 @@
+/*This class specifies the background-color property for the body of the website.*/
+body{
+	background-color: #87CEFA;                      
+}            
+
+/*This class specifies the background-color, text alignment, font-family, font color and border properties of the title banner for the website.*/     
+#dmainbody{
+	background-color: #A9A9A9;       
+	text-align: center;        
+	font-family: Agency FB;        
+	color: white;                
+	border: 2px solid white;       
+	text-decoration: underline;           
+	margin-bottom: 1px;   
+	width: fixed;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	font-weight: bold;  
+}     
+    	   
+/*This class specifies the background-color, font-family and font color properties of the heading2 div included within the paragraph div. */   	  	    
+h2 {     
+	background-color: #87CEFA;     
+	font-family: Agency FB;
+	color: white;     
+	display: block;	
+	margin-bottom: 1px;   
+	height: 0.5px;  
+	text-decoration: underline;
+	width: fixed;                              
+	padding-left: 5px;     
+	font-weight: none;   
+	float: none;
+	font-weight: bold;  
+}
+
+/*This class specifies the background-color, font-family, font-size font color and border properties of the paragraph div containg each page's content. */    	
+p {     
+	background-color: #A9A9A9;
+	font-family: Agency FB;
+	color: white;        
+	margin-top: -1px;        
+	margin-bottom: 0px;   
+	padding: 30px;   
+	padding-left: 5px; 
+	padding-bottom: 2px;     
+	border: 2px solid white;
+	border-bottom: none;         
+	font-size: 20px;
+	width: fixed; 
+	height: fixed;
+	float: none;
+	font-weight: none;
+}	   
+
+/*This class specifies the background-color, font-family and font color properties of the heading3 div included within the footer div.*/ 
+h3 {
+	background-color: none;  
+	font-family: Agency FB;
+	color: white;     
+	padding-top: 0px;  
+	padding-left: 5px;
+	width: fixed;
+	height: fixed;
+	margin: none;
+	float: none;  
+	font-weight: none;  
+}	
+
+/*This class specifies the background-color, font-family, font color properties of the text used within the TextBox1 and TextBox2 divs. */
+#para1{
+	font-family: Agency FB;
+	color: white;        
+	padding-top: 0px;        
+	margin-bottom: 0px;   
+	padding-left: 5px; 
+	padding-bottom: 50px;    
+	width: fixed;
+	height: fixed;
+	border: none;  
+	text-align: center;
+	float: none; 
+	font-weight: none;  
+}
+
+/*This class specifies the background-color, bordering, padding, margin, width, height and float properites of the dbanner div containing the automatic 
+slideshow. */
+.dbanner{      
+	text-align: center;      
+	background-color: #A9A9A9;
+	border: none;
+	border-top: none;   
+	border-bottom: solid white 2px;  
+	padding: 1px;                      
+   	margin-top: 1px;     
+	margin-bottom: 20px;	
+	width: fixed;         
+	height: fixed;  
+	float: none;  
+}       
+
+/*This class specifies the text alignment, background-color, bordering, padding, margin, width, height and float properties of the imagebox div contained 
+within the dbanner div. */ 
+.imagebox{
+	text-align: center;      
+	background-color: #A9A9A9;          
+	border: none;   
+	border-top: none;   
+	border-bottom: none;  
+	padding: 1px;     
+	padding-bottom: 30px;
+   	margin-top: 1px;     
+	margin-bottom: 20px;            
+	width: fixed;       
+	height: fixed;
+	float: center;    
+}            
+
+/*This class specifies the background-color, width, height, bordering, float, padding and margin properties of the #dresults div containing the results of the
+JavaScript form validatrion feature on the JavaScript webpage. */
+#dresults{
+	background-color: #A9A9A9;
+	width: 100%; 
+	height: 30px;  
+	border: none; 
+	float: none;
+	padding-top: 0px;  
+	margin-top: 0px;   
+}
+
+/*This class specifies the padding, margins, width, height, background colour bordering, font-family, font colour, font-size and margin properties 
+of the Submit button contained within the dfooter div on each webpage. */
+.bsubmit{
+	padding-top: 0px;
+	margin-top: 0px;  
+	width: 120px;
+	height: 30px;
+	background-color: #87CEFA; 
+	font-family: Agency FB;
+	color: white;  
+	border: 2px solid white;  
+	font-size: 1em;
+	margin: none;  
+}  
+
+/*This clas specifies the background-color, font-family, font colour, margins, bordering, font-weight, width, height and padding properties of the 
+Previous and Next buttons contained within the dbanner div on the homepage. */
+.button{
+	background-color: #A9A9A9;
+	font-family: Agency FB;    
+	color: white; 
+	font-size: 20px;   
+	margin: none;
+	border: 2px solid white;
+	font-weight: bold;
+	width: fixed; 
+	height: fixed;
+	padding: none;
+}        
+
+/*This class specifies the background-color, font-family, font colour, bordering, font-weight, width, height, float and margin properties of the clock button
+contained within the footer of each webpage. */
+.Clockbutton{
+	background-color: #A9A9A9;  
+	font-family: Agency FB;    
+	color: white; 
+	font-size: 20px;   
+	border: 2px solid white;  
+	font-weight: bold;
+	width: fixed;    		  
+	height: fixed;
+	float: right;  
+	margin: none;  
+}        
+
+/*This class specifies the background-color, bordering, margins, padding, width, height, padding and float properties of the container1 div which holds the 
+divs for the box, left, IMG1, right and IMG2 classes. */	  		  
+.container1{
+	background-color:#A9A9A9;  
+	border: 2px solid white;      
+	border-top: none;
+	margin-bottom: none;
+	padding: none; 
+	width: fixed;    
+	height: fixed; 
+	padding: none;
+	float: none; 
+}
+
+/*This class contains the float, width, height, padding, border, margin and background-color properties which are used to customise the portion of container1
+div and the box div within which the IMG1 class containing the first image is to be displayed on the HTML and CSS webpages.*/ 
+.left{
+	float: center;
+	width: 45%;
+	height: none;
+	padding: none;
+	border: none;
+	margin: none;
+	background-color: none;  
+}
+
+/*This class contains the float, width, height, padding, border, margin and background-color properties which are used to customise the portion of container1
+div and the box div within which the IMG1 class containing the second image is to be displayed on the HTML and CSS webpages.*/ 
+.right{
+	float: center;
+	width: 45%; 
+	height: none;  
+	padding: none;
+	border: none;
+	margin: none;  
+	background-color: none;
+}   
+
+/*This class contains the display, padding, background-color, margin, width, height and float properties of the box div contained within the container1 div.*/	        
+.box div{          
+  	display: inline-block;            
+	padding: 30px;                      
+	padding-top: 4px;  
+	padding-bottom: 30px;    
+	background-color: #A9A9A9;            
+	margin-left: auto;
+	margin-right: auto;           
+	margin-bottom: 0px;       
+	width: 45%;
+	height: none; 
+	float: center;  
+}
+   
+/*This class contains the background-image, float, margin, border, padding, width and height properties of the first image both contained within the box 
+and left divs of the container1 div. */
+.imgleft{
+	background-image: IMG1;
+	float: center;
+	margin: none;
+	border: none;
+	padding: none;
+	width: none; 
+	height: none;
+}
+
+/*This class contains the background-image, float, margin, border, padding, width and height properties of the first image both contained within the box 
+and right divs of the container1 div. */  
+.imgright{
+	background-image: IMG2;
+	float: center;  
+	margin: none;
+	border: none;
+	padding: none;
+	width: none;
+	height: none;
+}     
+
+/*This class contains the background-color, margin, width, height, border and float properties of the container2 div which holds both the TextBox1 and 
+TextBox2 divs. */
+.container2{
+	background-color: #A9A9A9;    
+	margin-top: 0px;  
+	margin-bottom: 20px;
+	width: fixed;    
+	height: fixed;
+	border: none;  
+	float: none;
+}
+
+/*This class contains the background-color, width, height, float, padding, margin and positions of the TextBox1 div which holds the para1 div. */  
+.TextBox1{
+	background-color: none;
+	width: 100%;
+	height: fixed;
+	float: center;         
+	padding: 0px;     
+	margin-left: auto;
+	position: left;	
+}
+  
+/*This class contains the background-color, width, height, float, padding, margins, position, and float properties of the TextBox2 div which holds the para1 
+div. */   
+.TextBox2{
+	background-color: none;  
+	width: 100%;     
+	height: fixed;   
+	float: center;
+	padding: 0px;     
+	margin-right: auto;    
+	position: right; 
+	padding: none;
+	float: none;
+}	
+
+/*This class contains the background-color, border, font-family, color, padding, margin, width, height, padding and float properties of the footer containing
+the h3 and Clockbutton divs. */ 	    
+.footer{
+	background-color: #87CEFA; 
+	border: 2px solid white; 
+	font-family: Agency FB;    
+	color: white;
+	padding: 1px;                       
+   	margin-top: 20px;
+	margin-bottom: 5px;
+	width: fixed;
+	height: fixed;  
+	padding-bottom: 1px; 
+	float: none; 
+}       
+/*This class contains the border, font color, background-color, margin, padding, float, width and height properties for when each navigation link is active 
+within the responsive navigation. */      
+.active {
+	border: 1px solid #71ddd0;         
+	color: white;           
+	background-color: #A9A9A9;         
+	margin: none;
+	padding: none;
+	float: none;
+	width: none;
+	height: none;  
+}
+
+/*This class contains the overflow, padding, margin, border, float, background-color, width and height properties for when each webpage is minimised
+and hides the navigation links. */
+.topnav {
+	overflow: hidden;
+	padding-top: 1%;
+	padding-right: 5%;
+	margin: none;
+	border: none;
+	float: none;  
+	background-color: none;  
+	width: none;
+	height: none;
+}
+
+/*This class contains the float, display, font color, text-align, padding, text-decoration, font-size, font-family, width, height, background-color, margin 
+and border properties for when each webpage is minimised. */
+.topnav a {     
+	float: right;
+	display: block;
+	color: white;  
+	text-align: center;      
+	padding: 12px;     
+	padding-top: 1px;
+	padding-bottom: 1px;      
+ 	text-decoration: none;
+	font-size: 24px;   
+	font-family: Agency FB;     
+	width: none;
+	height: none;           
+	background-color: none;     
+	margin: none;  
+	border: none;
+	font-weight: bold;  
+}
+
+/*This class contains the background-color, font color, width, height, float, padding, border and margin properties for when the navigation links and the 
+navigation icon are hovered over. */
+.topnav a:hover {    
+	background-color: lightblue;
+	color: black;  
+	width: none;     
+	height: none;    
+	float: fixed;      
+	padding: none;
+	border: none;
+	margin: none;  
+}
+
+/*This class displays an icon for when the screen is less than 780 pixels wide if each page is minimised. */
+.topnav .icon {
+	display: none; 
+	width: none;  
+	height: none;    
+	float: none;
+	padding: none;
+	border: none;
+	margin: none;   
+	background-color: none;  
+	
+}
+     
+/*This class hides all navigation links when the screen is less than 780 pixels wide and displays the navigation icon which displays the links when selected. */	 
+@media screen and (max-width: 780px) {
+   .topnav a:not(:first-child) {display: none;}
+   .topnav a.icon {
+   float: right;
+   display: block;   
+	width: none;
+	height: none;
+	padding: none;
+	border: none;
+	margin: none;
+	background-color: none;  
+  }
+} 
+  
+/*This class presents users with all the navigation links when the navigation icon is selected if each webpage is minimised. */  
+@media screen and (max-width: 780px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+		width: none;
+		height: none;
+		padding: none;
+		border: none;
+		margin: none;
+		background-color: none;  
+	}     
